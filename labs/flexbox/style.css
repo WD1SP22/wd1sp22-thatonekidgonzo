@@ -44,7 +44,11 @@ a:hover {
 }
 
 /* Mobile First Design Goes Here */
-
+.social {
+ display: flex;
+ flex-wrap: nowrap;
+ width: 25%;
+}
 
 /* Change when viewport is at least 500px wide */
 @media all and (min-width:500px) {
