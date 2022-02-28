@@ -41,13 +41,28 @@ a:hover {
   list-style: none;
   margin: 0;
   padding: 0;
+  /* Luke: Remember we have a single continer and then muliple flex items. So the
+           <ul> is the flex container and the <li>s (including the li.social) become
+           the flex items */
 }
+
+.flex-nav ul {
+  /* Display goes on the <ul> to amke it a flex container */
+  display: flex;
+  /* Since flex is a row by default, we "hack" it to work as columns */
+  flex-wrap: wrap;
+}
+
+/* Luke: Now we make all of the <li>s take up all the space on a the row, so they
+         have to wrap to the next line */
+li {
+  flex: 1 1 100%;
+}
+
 
 /* Mobile First Design Goes Here */
 .social {
- display: flex;
- flex-wrap: nowrap;
- width: 25%;
+ flex-basis: 25%;
 }
 
 /* Change when viewport is at least 500px wide */
