@@ -44,10 +44,16 @@ a:hover {
 }
 
 /* Mobile First Design Goes Here */
-.social {
+.flex-nav ul {
  display: flex;
- flex-wrap: nowrap;
- width: 25%;
+ flex-wrap: wrap;
+}
+
+li {
+  flex: 1 1 100%;
+}
+.social {
+ flex-basis: 25%;
 }
 
 /* Change when viewport is at least 500px wide */
