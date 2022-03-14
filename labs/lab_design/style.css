@@ -1,0 +1,44 @@
+form {
+  display:grid;
+  background: #121317;
+  color: #979696;
+  padding: 30px;
+  font-family: Arial;
+}
+
+input {
+  background: #18191E;
+  color: #979696;
+  height: 1fr 1fr 1fr;
+  border: 25px solid #18191E;
+  margin: 5px 0px 5px 0px;
+  font-size: 1.5em;
+}
+
+h1 {
+  padding: 60px 0px 60px 0px;
+  font-weight: lighter;
+}
+
+body {
+  padding: 150px 50px 150px 50px;
+}
+
+form button {
+  padding: 30px 50px 30px 50px;
+  background: #D29D41;
+  border:none;
+  font-size: 1.5em;
+  color: #6C411B;
+  font-weight: bold;
+}
+
+p {
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+form span:nth-child(even) {
+  color: #D29D41;
+}
