@@ -6,20 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <title>Responsive website #2</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <div class="wrapper">
-    <section class="top">
-      <div class="left-menu">
-        <ul id="left-menut-list">
-          <li>
-            <a href="#">Company Name</a>
-          </li>
-        </ul>
-        </div>
-        <div class="right-menu">
-        <ul id="right-menu-list">
+    <header>
+    <p>Company name</p>
+    <nav class="top">
+        <ul class="top-nav">
           <li>
             <a href="#">Features</a>
           </li>
@@ -33,17 +30,17 @@
             <a href="#">Pricing</a>
           </li>
         </ul>
-        <button class="white">Sign Up</button>
-      </div>
-    </section>
-    <section class="Header">
+    </nav>
+    <a class="cta" href="#"><button>Sign Up</button></a>
+    </header>
+    <section class="Title">
       <h1>Pricing</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </section>
-    <section class="feature">
+    <section class="features">
       <div class="feature">
         <h4>Free</h4>
-        <h2>$0 / mo</h2>
+        <h2 class="money">$0 / mo</h2>
         <p>10 users included</p>
         <p>2GB of storage</p>
         <p>Email support</p>
@@ -52,7 +49,7 @@
       </div>
       <div class="feature">
         <h4>Pro</h4>
-        <h2>$15 / mo</h2>
+        <h2 class="money">$15 / mo</h2>
         <p>20 users included</p>
         <p>10GB of storage</p>
         <p>Priority Email support</p>
@@ -61,7 +58,7 @@
       </div>
       <div class="feature">
         <h4>Enterprise</h4>
-        <h2>$29 / mo</h2>
+        <h2 class="money">$29 / mo</h2>
         <p>30 users included</p>
         <p>15GB of storage</p>
         <p>Phone and Email support</p>
@@ -71,7 +68,7 @@
     </section>
     <section class="resources">
       <div class="resource">
-        <p>Features</p>
+        <h4>Features</h4>
         <p>Cool stuff</p>
         <p>Random feature</p>
         <p>Team feature</p>
@@ -80,14 +77,14 @@
         <p>Last time</p>
       </div>
       <div class="resource">
-        <p>Resources</p>
+        <h4>Resources</h4>
         <p>Resource</p>
         <p>Resource name</p>
         <p>Another resource</p>
         <p>Final resource</p>
       </div>
       <div class="resource">
-        <p>About</p>
+        <h4>About</h4>
         <p>Team</p>
         <p>Locations</p>
         <p>Privacy</p>

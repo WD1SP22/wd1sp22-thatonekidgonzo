@@ -29,25 +29,132 @@ img {
     max-width: 100%;
 }
 /* END Default Styles */
-body {
-  margin: 0px;
-}
-
-.top {
-  display: inline-flex;
+* {
+  margin: 0;
+  padding: 0;
   background-color: var(--white);
-  width: 100%;
 }
 
-.left-menu ul {
-  display: inline-flex;
-  list-style: none;
-  padding-left: 10px;
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 15px 10px;
+  border-bottom: 5px solid var(--light-gray);
 }
 
-.right-menu ul {
-  display: inline-flex;
-  list-style: none;
-  padding-right: 10px;
-  padding-left: 10px;
+header button {
+ background-color: var(--white);
+ border: 1px solid var(--btn);
+ padding: 5px 10px;
+ color: var(--btn);
+ border-radius: 5px;
 }
+
+.top-nav {
+  list-style: none;
+}
+
+.top-nav li {
+  display: inline-block;
+  padding-right: 5px;
+}
+
+header p {
+  margin-right: auto;
+}
+
+.top a {
+  text-decoration: none;
+  color: var(--font);
+}
+
+/* ebd of the top */
+
+.Title {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.Title p {
+  max-width: 600px;
+  text-align: center;
+   display:inline-block;
+   padding-top: 10px;
+   padding-bottom: 30px;
+}
+
+/* end of the title */
+
+.features {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 280px));
+  padding-left: 40px;
+  padding-right: 40px;
+  justify-content: center;
+}
+
+.feature {
+  border: 1px solid var(--light-gray);
+  border-radius: 4px;
+  text-align: center;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  padding-bottom: 25px;
+}
+
+.feature h4 {
+  background-color: var(--light-light-gray);
+  padding: 5px 5px;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  margin: 5px;
+}
+
+.feature button {
+  width: 90%;
+  height: 19%;
+}
+
+ .white {
+  border: 1px solid var(--btn);
+  border-radius: 5px;
+  color: var(--btn);
+  margin-top: 20px;
+}
+
+.green {
+  border: 1px solid var(--btn);
+  border-radius: 5px;
+  color: var(--white);
+  background-color: var(--btn);
+  margin-top: 20px;
+}
+
+.money {
+  padding-bottom: 5px;
+}
+
+/* end of the features */
+
+.resources {
+  display: grid;
+  grid-gap: 90px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 180px));
+  text-align: left;
+  padding-left: 60px;
+  padding-right: 60px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.resource h4{
+  padding-bottom: 10px;
+}
+
+.resource p {
+  color: var(--medium-gray);
+}
+
