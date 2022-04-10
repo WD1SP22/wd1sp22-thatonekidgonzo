@@ -6,3 +6,282 @@
     --white: #FFFFFF;
     --btn: #007bff;
 }
+* {
+    font-family: "Roboto", Helvetica, Arial;
+}
+
+body {margin: 0;}
+
+.menu {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+.menu a {
+    float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.banner {
+    margin-top: 27px;
+}
+
+.right {
+    font-weight: 300;
+    font-size: 13px;
+    color: var(--dark);
+}
+
+.left {
+    font-weight: 400;
+    color: var(--white);
+    font-size: 14px;
+}
+
+
+.right {
+    float: right;
+}
+
+[aria-controls="menu"] {
+    display: none;
+}
+/* This is the end of the sticky navbar */
+
+
+.hero {
+   min-height: 250px;
+   background: white url('http://via.placeholder.com/1900x1080.png');
+   background-size: cover;
+   background-position: center;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   color: var(--white);
+}
+
+.hero h1 {
+    padding-top: 123px;
+    margin-bottom: 0px;
+    font-weight: 400;
+}
+
+.hero p {
+    font-weight: 100;
+    font-size: small;
+}
+/* This is the end of the hero/banner */
+
+.cards {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.card {
+    background-color: #EFEFEF;
+    border: 1px solid #EFEFEF;
+    border-radius: 5px;
+}
+
+.card h2 {
+    font-weight: 300;
+    color: black;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+.card p {
+    background: var(--white);
+    margin-top: 10px;
+    min-height: 150px;
+    max-height: 150px;
+    padding: 10px;
+    color: black;
+    font-weight: 300;
+    margin-bottom: 7px;
+}
+
+.card_title {
+    padding-left: 20px;
+}
+
+.button {
+    padding-left: 10px;
+    padding-bottom: 3px;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.card button {
+    background: var(--btn);
+    border: 3px solid var(--btn);
+    border-radius: 5px;
+    padding: 4px;
+    color: var(--lightlight);
+}
+/* This is the end of the card section */
+
+.projects {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.project img {
+    min-width: 300px;
+    max-width: 100%;
+}
+
+
+.project {
+    border: 1px solid var(--light);
+    border-radius: 10px;
+}
+
+.project_content p {
+    padding-left: 15px;
+    font-weight: 100;
+}
+
+.project_content h2 {
+    padding-left: 15px;
+    color: var(--btn);
+    font-weight: 300;
+}
+
+/* This is the end of the projects */
+
+.details {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+    padding: 15px;
+    font-weight: 100;
+}
+
+.image_placeholder img {
+   max-width: 100%;
+}
+
+.detail {
+    max-width: 100%;
+}
+
+.details_title {
+    padding-left: 15px;
+}
+
+.to_bold {
+    font-weight: bold;
+}
+/* End of detail section */
+
+.footers {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: repeat(auto-fit, minmax(0, 1fr));
+    padding-right: 0px;
+    margin-right: 0px;
+}
+
+.cta {
+    display: flex;
+    max-width: 100%;
+    padding-left: 15px;
+    font-weight: 100;
+    padding-right: 15px;
+    
+}
+
+.footer {
+    max-width: 100%;
+    min-height: 60px;
+    max-height: 60px;
+    background: var(--dark);
+    color: var(--white);
+    text-align: center;
+    padding-top: 20px;
+    font-weight: 300;
+    font-size: small;
+}
+
+.cta button {
+    border: 1px solid var(--medium);
+    border-radius: 5px;
+    background: var(--medium);
+    color: var(--white);
+    min-height: 30px;
+    max-height: 30px;
+    min-width: 240px;
+    max-width: 240px;
+}
+
+
+.cta p {
+    margin-top: 0px;
+}
+/* End of footer */
+
+@media (max-width: 700px) {
+    
+.cards {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(550px, 700px));
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.card p {
+    background: var(--white);
+    margin-top: 10px;
+    min-height: 150px;
+    max-height: 150px;
+    color: black;
+    font-weight: 300;
+    margin-bottom: 7px;
+    padding-bottom: 0px;
+}
+
+.information {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.projects {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(550px, 700px));
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.details {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(550px, 700px));
+    padding: 15px;
+    font-weight: 100;
+    
+}
+
+} 
+
+@media (max-width: 550px) {
+ 
+ 
+}

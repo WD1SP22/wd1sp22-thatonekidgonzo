@@ -6,11 +6,153 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <link rel="stylesheet" href="style.css">
+  <title>Responsive website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&family=Roboto:wght@100;300;500;700&family=Space+Mono&display=swap" rel="stylesheet">
 </head>
 
 <body>
 	<img src="http://placehold.it/1900x1080" alt="">
-	<img src="http://placehold.it/700x400" alt="">
-	<img src="http://placehold.it/700x450" alt="">
+	<div class="wrapper">
+	    <div class="menu">
+	        <div class="left">
+	            <a href="Business_Name">Business Name</a>
+	        </div>
+	        <div class="right" id="menu">
+	           <a href="#About">About</a>
+               <a href="#Services">Services</a>
+               <a href="#Contact">Contact</a>
+               <a href="#Blog">Blog</a>
+	        <button aria-expanded="false" aria-controls="menu">
+        <span class="open">☰</span>
+        <span class="close">×</span>
+        </button> 
+	        </div>
+	</div>
+	<section class="banner">
+	    <header class="hero">
+	        <h1>Welcome</h1>
+	        <p>This is a description of a business</p>
+	    </header>
+	</section>
+	<h2 class="card_title">Welcome to Business Name</h2>
+	<section class="cards">
+	    <div class="card">
+	        <div class="title">
+	            <h2>Card Title</h2>
+	        </div>
+	        <div class="information">
+	            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	        </div>
+	        <div class="button">
+	            <button type="button">Learn More</button>
+	        </div>
+	    </div>
+	    <div class="card">
+	        <div class="title">
+	            <h2>Card Title</h2>
+	        </div>
+	        <div class="information">
+	            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque gravida in fermentum et sollicitudin ac orci. Cras fermentum odio eu feugiat pretium nibh ipsum. Quisque egestas diam in arcu cursus euismod quis viverra.</p>
+	        </div>
+	        <div class="button">
+	            <button type="button">Learn More</button>
+	        </div>
+	    </div>
+	    <div class="card">
+	        <div class="title">
+	            <h2>Card Title</h2>
+	        </div>
+	        <div class="information">
+	            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor morbi non arcu risus quis varius quam quisque.</p>
+	        </div>
+	        <div class="button">
+	            <button type="button">Learn More</button>
+	        </div>
+	    </div>
+	</section>
+	<h2 class="card_title">Projects</h2>
+	<section class="projects">
+	    <div class="project">
+	        <div class="project_content">
+	        	<img src="http://via.placeholder.com/700x400.png" alt="project_pic">
+	            <h2>Project One</h2>
+	            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc eget lorem dolor sed viverra.</p>
+	        </div>
+	    </div>
+	    <div class="project">
+	        <div class="project_content">
+	        	<img src="http://via.placeholder.com/700x400.png" alt="project_pic">
+	            <h2>Project Two</h2>
+	            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet mauris commodo quis imperdiet massa tincidunt.</p>
+	        </div>
+	    </div>
+	    <div class="project">
+	        <div class="project_content">
+	        	<img src="http://via.placeholder.com/700x400.png" alt="project_pic">
+	            <h2>Project Three</h2>
+	            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	        </div>
+	    </div>
+	    <div class="project">
+	        <div class="project_content">
+	        	<img src="http://via.placeholder.com/700x400.png" alt="project_pic">
+	            <h2>Project Four</h2>
+	            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	        </div>
+	    </div>
+	    <div class="project">
+	        <div class="project_content">
+	        	<img src="http://via.placeholder.com/700x400.png" alt="project_pic">
+	            <h2>Project Five</h2>
+	            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	        </div>
+	    </div>
+	    <div class="project">
+	        <div class="project_content">
+	        	<img src="http://via.placeholder.com/700x400.png" alt="project_pic">
+	            <h2>Project Six</h2>
+	            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+	        </div>
+	    </div>
+	</section>
+	<h2 class="details_title">Business Details</h2>
+	<div class="details">
+	    <div class="detail">
+	        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+	        <ul id="facts">
+	            <li>
+	                <p class="to_bold">Business Fact #1</p>
+	            </li>
+	            <li>
+	                <p>Business Fact #2</p>
+	            </li>
+	            <li>
+	                <p>Business Fact #3</p>
+	            </li>
+	            <li>
+	                <p>Business Fact #4</p>
+	            </li>
+	            <li>
+	                <p>Business Fact #5</p>
+	            </li>
+	        </ul>
+	        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Hac habitasse platea dictumst quisque sagittis purus sit amet. Hac habitasse platea dictumst quisque sagittis purus sit amet.</p>
+	    </div>
+	    <div class="image_placeholder">
+	    	<img src="http://via.placeholder.com/700x450.png" alt="detail_pic">
+	    </div>
+	</div>
+	<div class="footers">
+	    <div class="cta">
+	        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.sed do eiusmod tempor incididunt. Hac habitasse platea dictumst quisque sagittis purus sit amet.</p>
+	        <button type="button">Call to Action</button>
+	    </div>
+	    <div class="footer">
+	        <p>Copyright &copy; Your Website</p>
+	    </div>
+	</div>
+	</div>
 </body>
 </html>
