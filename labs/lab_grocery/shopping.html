@@ -1,12 +1,49 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <title>Page Title</title>
-      <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Grocery List</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
 	  <meta charset="utf-8">
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="style.css">
   </head>
-  
   <body>
+    <div class="list">
+    <form id="grocery_form" action="#" method="GET">
+      <h1>Grocery List</h1>
+      <label>Item Name</label>
+      <input type="text" name="texts" id="texts">
+      <br>
+      <br>
+      <label>Quantity</label>
+      <input type="number" id="number" name="number" min="1" max="10">
+      <br>
+      <br>
+      <label>Category</label>
+      <select id="category" name="category">
+        <option value="Produce">Produce</option>
+        <option value="Dairy">Dairy</option>
+        <option value="Meat">Meat</option>
+        <option value="Household">Household</option>
+        <option value="Pantry">Pantry</option>
+        <option value="Misc.">Misc.</option>
+      </select>
+      <br>
+      <br>
+      <input type="submit" class="submit">
+    </form>
+    <ul>
+    </ul>
+    </div>
+    <div class="footer">
+      <label>Remove First Item</label>
+      <button type="button" class="remove">Remove</button>
+      <br>
+      <br>
+      <label>Remove Last Item</label>
+      <button type="button" class="remove">Remove</button>
+      <br>
+    </div>
+    <script src="shopping.js"></script>
   </body>
 </html>
