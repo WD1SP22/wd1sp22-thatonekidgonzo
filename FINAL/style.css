@@ -1,0 +1,163 @@
+body {
+    background-color: #003153;
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+}
+
+
+.photo {
+    display: grid;
+    grid-template-columns: 22em 1fr;
+    grid-template-rows: 22em 1fr;
+    grid-gap: 10em;
+    padding-left: 30px;
+}
+
+.pic {
+    background-image: url("profilepic.jpg");
+    background-size: cover;
+    border-radius: 300px;
+    border: 8px solid #C8AD7F;
+}
+
+.info {
+    color: #C8AD7F;
+}
+
+.bio {
+    color: white;
+    font-weight: 500;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    padding-left: 20px;
+}
+
+.footer {
+    display: grid;
+    color: white;
+    justify-items: center;
+    padding-top: 6em;
+}
+
+.topnav {
+  background-color: #743D2B;
+  overflow: hidden;
+  width: 100%;
+  top: 0;
+  position: fixed;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #58CCED;
+  color: white;
+}
+
+.name {
+    padding-top: 20px;
+    color: white;
+    font-size: 2em;
+    padding-left: 20px;
+}
+
+/* FIRST PAGE */
+
+/* GOALS */
+
+.goalsbody {
+    background-color: #1D536C;
+    margin: 0px;
+    font-family: 'Fredericka the Great', cursive;
+}
+
+.goalsname {
+    display: grid;
+    justify-items: center;
+    padding-top: 1em;
+    font-size: 2em;
+    color: rgba(255,255,255, 0.8);
+}
+
+.goalsname h1 {
+    border: 8px solid #C8AD7F;
+    padding: 10px;
+    background-color: black;
+    border-radius: 15px;
+}
+
+.goalhubs {
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    grid-template-rows: 45% 45%;
+    column-gap: 20px;
+    row-gap: 20px;
+    padding: 15px;
+    height: 50em;
+}
+
+.goalhub {
+    border: 3px solid #E0AB8B;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+.goalhub h2 {
+ text-align: center;
+ font-size: 45px;
+ color: rgba(255,255,255, 0.7);
+}
+
+.goalhub li {
+    font-size: 30px;
+}
+
+
+
+
+.languages {
+    font-size: 25px;
+}
+
+.goalhubvacations {
+    border: 3px solid #E0AB8B;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    background-image: url("clouds.jpg");
+    color: white;
+    background-size: cover;
+    font-size: 30px;
+}
+
+.goalhubvacations h2 {
+ text-align: center;
+}
+
+.goalhub:hover {
+    transform: scale(1.03);
+}
+
+.goalhubvacations:hover {
+    transform: scale(1.03);
+}
+
+/* END OF GOALS */
+
+/* START OF SKILLS */
