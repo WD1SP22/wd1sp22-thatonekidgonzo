@@ -1,5 +1,5 @@
 body {
-    background-color: #003153;
+    background-color: #005cc3;
     font-family: 'Roboto', sans-serif;
     margin: 0px;
 }
@@ -17,11 +17,17 @@ body {
     background-image: url("profilepic.jpg");
     background-size: cover;
     border-radius: 300px;
-    border: 8px solid #C8AD7F;
+    border: 7px solid #C8AD7F;
 }
+
 
 .info {
     color: #C8AD7F;
+}
+
+.info i:hover {
+    transform: scale(0.90);
+    color: #54D094;
 }
 
 .bio {
@@ -31,6 +37,7 @@ body {
     margin: 0px;
     border: 0px;
     padding-left: 20px;
+    text-align: center;
 }
 
 .footer {
@@ -38,6 +45,7 @@ body {
     color: white;
     justify-items: center;
     padding-top: 6em;
+    text-align: center;
 }
 
 .topnav {
@@ -72,6 +80,7 @@ body {
     color: white;
     font-size: 2em;
     padding-left: 20px;
+    text-align: center;
 }
 
 /* FIRST PAGE */
@@ -106,7 +115,7 @@ body {
     column-gap: 20px;
     row-gap: 20px;
     padding: 15px;
-    height: 50em;
+    height: 70em;
 }
 
 .goalhub {
@@ -158,6 +167,65 @@ body {
     transform: scale(1.03);
 }
 
+.goalhubprojects {
+    border: 3px solid #E0AB8B;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    background-image: url("seeds.jpg");
+    color: white;
+    background-size: cover;
+    font-size: 30px;
+}
+
+
+.goalhubprojects h2 {
+    text-align: center;
+}
+
+.goalhubprojects:hover {
+    transform: scale(1.03);
+}
+
+.goalhubtravel {
+    border: 3px solid #E0AB8B;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    color: white;
+    background-color: #2E242C;
+    font-size: 30px;
+}
+
+.goalhubtravel:hover {
+    transform: scale(1.03);
+}
+
+.goalhubtravel h2 {
+    text-align: center;
+    margin-top: 0px;
+    border-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    border-bottom: 0px;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    height: 445px
+}   
+
+.gallery img {
+    height: 100%;
+    width: 100%;
+    flex-shrink: 0;
+    object-fit: cover;
+    position: sicky;
+    top: 0;
+}
 /* END OF GOALS */
 
 /* START OF SKILLS */
