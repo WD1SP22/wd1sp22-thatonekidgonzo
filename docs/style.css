@@ -1,7 +1,11 @@
 body {
-    background-color: #005cc3;
+    background-color: #014462;
     font-family: 'Roboto', sans-serif;
     margin: 0px;
+}
+
+html {
+    height: 100%;
 }
 
 
@@ -88,7 +92,7 @@ body {
 /* GOALS */
 
 .goalsbody {
-    background-color: #1D536C;
+    background-color: #001118;
     margin: 0px;
     font-family: 'Fredericka the Great', cursive;
 }
@@ -229,3 +233,50 @@ body {
 /* END OF GOALS */
 
 /* START OF SKILLS */
+
+
+
+.skillsbody {
+    display: grid;
+    margin: 0;
+    padding-top: 48px;
+    height: 100%;
+    grid-template-columns: auto 45%;
+    grid-template-rows:34% 33% 33%;
+    grid-template-areas:
+    "sidebar sect1"
+    "sidebar sect2"
+    "sidebar sect3";
+}
+
+aside {
+    grid-area: sidebar;
+    background-color: #5F84A2;
+    text-align: center;
+}
+
+#classes {
+    grid-area: sect1;
+    background-color: #194569;
+    text-align: center;
+}
+
+#work {
+    grid-area: sect2;
+    background-color: #CADEED;
+    text-align: center;
+}
+
+#life {
+    grid-area: sect3;
+    background-color: #02557A;
+    text-align: center;
+}
+
+table th, td {
+    border: 7px solid #CC9466;
+    font-size: x-large;
+    color: white;
+    background-color: black;
+}
+
