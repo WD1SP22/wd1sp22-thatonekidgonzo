@@ -37,7 +37,6 @@ function Update() {
   for (let value of faq) {
       htmlString += `<li><h3>${value.textone}</h3></li>`;
       document.body.appendChild(button);
-      //figure out how to add a button
       htmlString += `<h4>${value.answer}</h4>`;
   } 
   elOL.innerHTML += htmlString;
