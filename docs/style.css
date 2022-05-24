@@ -253,30 +253,42 @@ aside {
     grid-area: sidebar;
     background-color: #5F84A2;
     text-align: center;
+    color: white;
 }
 
 #classes {
     grid-area: sect1;
     background-color: #194569;
     text-align: center;
+    color: white;
 }
 
 #work {
     grid-area: sect2;
-    background-color: #CADEED;
     text-align: center;
+    color: white;
+    background-image: url("bread.jpg");
+    background-size: cover;
 }
 
 #life {
     grid-area: sect3;
     background-color: #02557A;
     text-align: center;
+    color: white;
 }
 
 table th, td {
-    border: 7px solid #CC9466;
+    border: 5px solid #CC9466;
     font-size: x-large;
     color: white;
     background-color: black;
 }
 
+iframe {
+    padding-top: 40px;
+}
+
+#life h1 {
+    padding-bottom: 35px;
+}

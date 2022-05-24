@@ -1,0 +1,17 @@
+body {
+    display: grid;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+form {
+    border: 5px solid white;
+    padding: 10px;
+    background-color: brown;
+}
+
+h4 {
+    border: 3px solid white;
+    font-size: large;
+}
