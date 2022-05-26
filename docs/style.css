@@ -8,7 +8,6 @@ html {
     height: 100%;
 }
 
-
 .photo {
     display: grid;
     grid-template-columns: 22em 1fr;
@@ -23,7 +22,6 @@ html {
     border-radius: 300px;
     border: 7px solid #C8AD7F;
 }
-
 
 .info {
     color: #C8AD7F;
@@ -110,6 +108,7 @@ html {
     padding: 10px;
     background-color: black;
     border-radius: 15px;
+    text-shadow: 4px 4px white;
 }
 
 .goalhubs {
@@ -141,9 +140,6 @@ html {
     font-size: 30px;
 }
 
-
-
-
 .languages {
     font-size: 25px;
 }
@@ -161,14 +157,7 @@ html {
 
 .goalhubvacations h2 {
  text-align: center;
-}
-
-.goalhub:hover {
-    transform: scale(1.03);
-}
-
-.goalhubvacations:hover {
-    transform: scale(1.03);
+ text-decoration: none;
 }
 
 .goalhubprojects {
@@ -180,15 +169,11 @@ html {
     color: white;
     background-size: cover;
     font-size: 30px;
+    font-style: normal;
 }
-
 
 .goalhubprojects h2 {
     text-align: center;
-}
-
-.goalhubprojects:hover {
-    transform: scale(1.03);
 }
 
 .goalhubtravel {
@@ -199,10 +184,6 @@ html {
     color: white;
     background-color: #2E242C;
     font-size: 30px;
-}
-
-.goalhubtravel:hover {
-    transform: scale(1.03);
 }
 
 .goalhubtravel h2 {
@@ -233,8 +214,6 @@ html {
 /* END OF GOALS */
 
 /* START OF SKILLS */
-
-
 
 .skillsbody {
     display: grid;
@@ -292,3 +271,395 @@ iframe {
 #life h1 {
     padding-bottom: 35px;
 }
+
+/* END OF SKILLS */
+
+/* START OF HOBBIES */
+
+.hobbiesbody {
+    display: grid;
+    margin: 0;
+    padding-top: 48px;
+    height: 100%;
+    grid-template-columns: auto 50%;
+    grid-template-rows:33% 33% 34%;
+    grid-template-areas:
+    "cook baking"
+    "camping camping"
+    "spotify music";
+    text-align: center;
+    background-color: #1E5631;
+}
+
+#cook {
+  grid-area: cook; 
+  background-color: #ECD07C;
+}
+
+#baking {
+  grid-area: baking;
+  background-color: #ECD07C;
+}
+
+#camping {
+  grid-area: camping;
+  background-color: #1E5631;
+  color: white;
+}
+
+#spotify {
+  grid-area: spotify;   
+  color: green;
+  background-color: black;
+  border: 3px solid green;
+  border-radius: 300px;
+}
+
+#music {
+  grid-area: music;  
+  background-color: #1E5631;
+  color: white;
+}
+
+#spotify h2 {
+    padding-bottom: 2.5em;
+}
+
+.spotify i:hover {
+    color: #8BC34A;
+     transform: scale(1.10);
+}
+
+#cook li {
+    padding-bottom: 35px;
+    font-weight: bold;
+}
+
+#baking li {
+    padding-bottom: 35px;
+    font-weight: bold;
+}
+
+/* END OF Hobbies */
+
+/* Start or Bio */
+
+.biobody {
+    display: grid;
+    margin: 0;
+    height: 100%;
+    grid-template-columns: auto 50%;
+    grid-template-rows:33% 33% 34%;
+    grid-template-areas:
+    "profilepic dreams"
+    "school travel"
+    "why why";
+    text-align: left;
+    background-color: black;
+}
+
+#profilepic {
+    grid-area: profilepic;
+    border-radius: 150px;
+    border: 5px solid white;
+    background-image: url("biopic.jpg");
+    background-size: cover;
+    background-position: left;
+    margin-top: 50px;
+}
+
+#dreams {
+   grid-area: dreams;
+   color: white;
+   margin-top: 50px;
+   line-height: 1.2;
+   text-indent: 20px;
+}
+
+#school {
+   grid-area: school;
+   color: white;
+   padding-right: 20px;
+   line-height: 1.2;
+   text-indent: 20px;
+}
+
+#travel {
+    grid-area: travel;
+    color: white;
+    line-height: 1.2;
+    text-indent: 20px;
+}
+
+#why {
+  grid-area: why;
+  color: white;
+  line-height: 1.2;
+  text-indent: 20px;
+}
+
+/* END OF BIO*/
+
+
+@media (max-width: 1160px) {
+ /* SKILLS */  
+.skillsbody {
+  display: grid;
+  margin: 0;
+  padding-top: 48px;
+  height: 100%;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "sidebar"
+    "sect1"
+    "sect2"
+    "sect3";
+} 
+ 
+#work {
+    grid-area: sect2;
+    text-align: center;
+    color: white;
+    background-image: url("bread.jpg");
+    background-size: cover;
+    height: 600px;
+}
+ 
+
+/* END OF SKILLS */
+ 
+/* STart of Hobbies */
+
+
+#spotify {
+  grid-area: spotify;   
+  color: green;
+  background-color: #1E5631;
+  border: hidden;
+  border-radius: 300px;
+  margin-top: 245px;
+}
+
+#music {
+  grid-area: music;  
+  background-color: #1E5631;
+  color: white;
+  margin-top: 245px;
+}
+
+/* END OF HOBBIES */
+
+/* START OF BIO */
+
+#travel {
+    grid-area: travel;
+    color: white;
+    line-height: 1.2;
+    text-indent: 20px;
+    padding-top: 20px;
+}
+
+}
+
+@media (max-width: 708px) {
+    
+/* START OF INDEX */
+.photo {
+    display: grid;
+    grid-template-columns: 22em 1fr;
+    grid-template-rows: 22em 1fr;
+    grid-gap: 3em;
+    padding-left: 30px;
+}
+
+/* END OF INDEX */
+
+/* START OF GOALS */
+
+.goalhubs {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 20px;
+    padding: 15px;
+    height: 70em;
+}
+
+/* END OF GOALS */
+
+/* START OF HOBBIES */
+
+
+#spotify {
+  grid-area: spotify;   
+  color: green;
+  background-color: #1E5631;
+  border: hidden;
+  border-radius: 300px;
+  margin-top: 545px;
+}
+
+#music {
+  grid-area: music;  
+  background-color: #1E5631;
+  color: white;
+  margin-top: 545px;
+}
+
+/* END OF HOBBIES */
+
+/* START OF BIO */
+
+#travel {
+    grid-area: travel;
+    color: white;
+    line-height: 1.2;
+    text-indent: 20px;
+    padding-top: 95px;
+}
+
+#why {
+  grid-area: why;
+  color: white;
+  line-height: 1.2;
+  text-indent: 20px;
+  padding-top: 110px;
+}
+
+}
+
+@media (max-width: 550px) {
+
+/* START OF INDEX */
+
+.photo {
+    display: grid;
+    grid-template-columns: 11em 1fr;
+    grid-template-rows: 11em 1fr;
+    grid-gap: 1em;
+    padding-left: 30px;
+}
+
+.bio {
+    color: white;
+    font-weight: 500;
+    padding-top: 110px;
+    margin: 0px;
+    border: 0px;
+    padding-left: 20px;
+    text-align: center;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 8px 10px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* END OF INDEX */
+
+/* START OF GOALS */
+
+.goalsbody {
+    background-color: #001118;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif; 
+}
+
+/* END OF GOALS */
+
+/* START OF SKILLS */
+
+.skillsbody {
+    display: grid;
+    margin: 0;
+    padding-top: 48px;
+    height: 100%;
+    grid-template-columns: 320px;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "sidebar"
+    "sect1"
+    "sect2"
+    "sect3";
+}
+
+table th, td {
+    border: 5px solid #CC9466;
+    font-size: small;
+    color: white;
+    background-color: black;
+}
+
+iframe {
+    width: 320px;
+}
+
+/* END OF SKILLS */
+
+/* START OF HOBBIES */
+#camping {
+  grid-area: camping;
+  background-color: #1E5631;
+  color: white;
+  margin-top: 120px;
+}
+
+#cook {
+  grid-area: cook; 
+  background-color: #ECD07C;
+  padding-bottom: 535px;
+}
+
+#baking {
+  grid-area: baking;
+  background-color: #ECD07C;
+  padding-bottom: 535px;
+}
+
+#spotify {
+  grid-area: spotify;   
+  color: green;
+  background-color: #1E5631;
+  border: hidden;
+  border-radius: 300px;
+  margin-top: 285px;
+}
+
+#music {
+  grid-area: music;  
+  background-color: #1E5631;
+  color: white;
+  margin-top: 285px;
+}
+
+/* END OF HOBBIES */
+
+/* START OF BIO */
+
+#travel {
+    grid-area: travel;
+    color: white;
+    line-height: 1.2;
+    text-indent: 20px;
+    padding-top: 365px;
+}
+
+#why {
+  grid-area: why;
+  color: white;
+  line-height: 1.2;
+  text-indent: 20px;
+  padding-top: 665px;
+}
+
+.biobody h1 {
+    font-size: medium;
+}
+}
+
+/* THIS SHOULD ALL WORK FROM width 320-550 as i saw 320 as most used smallest width. */
