@@ -23,46 +23,57 @@ const elQuestion = document.getElementById('textone');
    
 const elAnswer = document.getElementById('answer');
 
-faq.push(new Info(elQuestion.value, elAnswer.value));
+// faq.push(new Info(elQuestion.value, elAnswer.value));
 
-Update();
+Update(new Info(elQuestion.value, elAnswer.value));
+elForm.reset();
 
 });
       //const button = document.createElement('button');
       //button.innerText = 'Toggle Answer';
 
-function Update() {
+function Update(value) {
   const elOL = document.querySelector('ol');
   let htmlString = '';
-  for (let value of faq) {
+//   for (let value of faq) {
       htmlString += `<li>
                        <h3>${value.textone}</h3>
-                       <button onclick="toggle();">Toggle Answer</button>
-                       <h4 hidden>${value.answer}</h4>
+                       <button>Toggle Answer</button>
+                       <h4 hidden="hidden">${value.answer}</h4>
                     </li>`;
-  } 
+//   } 
   elOL.innerHTML += htmlString;
+//   let el = document.querySelector('ol li:last-child button');
+//   console.log(el);
+    let element = document.getElementsByTagName("button");
+    for (let el of element) {
+        el.addEventListener('click', function() {
+        toggle(el); 
+        });
+    }
 }
 
 /* FAQ ends here */
 
 /* Event listener for clicking */
 
-let element = document.getElementById("button");
-let hidden = element.getAttribute("hidden");
+let element = document.getElementsByTagName("button");
 
 
 for (let el of element) {
-    element.addEventListener('click', function() {
-       toggle(); 
+    el.addEventListener('click', function() {
+       toggle(el); 
     });
 }
 
-function toggle() {
-    if (hidden) {
-        element.removeAttribute("hidden");
+function toggle(el) {
+    let hidden = el.nextElementSibling.getAttribute("hidden");
+    
+    console.log(hidden);
+    if (hidden == "hidden") {
+        el.nextElementSibling.removeAttribute("hidden");
     } else {
-        element.setAttribute("hidden", "hidden");
+        el.nextElementSibling.setAttribute("hidden", "hidden");
     }
 }
 
